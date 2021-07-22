@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_cargos" targetNamespace="http://tempuri.org/ds_cargos.xsd" xmlns:mstns="http://tempuri.org/ds_cargos.xsd" xmlns="http://tempuri.org/ds_cargos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_cargos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_cargos" msprop:Generator_UserDSName="ds_cargos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cargosNF" msprop:Generator_TableClassName="cargosNFDataTable" msprop:Generator_TableVarName="tablecargosNF" msprop:Generator_TablePropName="cargosNF" msprop:Generator_RowDeletingName="cargosNFRowDeleting" msprop:Generator_RowChangingName="cargosNFRowChanging" msprop:Generator_RowEvHandlerName="cargosNFRowChangeEventHandler" msprop:Generator_RowDeletedName="cargosNFRowDeleted" msprop:Generator_UserTableName="cargosNF" msprop:Generator_RowChangedName="cargosNFRowChanged" msprop:Generator_RowEvArgName="cargosNFRowChangeEvent" msprop:Generator_RowClassName="cargosNFRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="origen" msprop:Generator_ColumnVarNameInTable="columnorigen" msprop:Generator_ColumnPropNameInRow="origen" msprop:Generator_ColumnPropNameInTable="origenColumn" msprop:Generator_UserColumnName="origen" type="xs:string" minOccurs="0" />
+              <xs:element name="cardettse" msprop:Generator_ColumnVarNameInTable="columncardettse" msprop:Generator_ColumnPropNameInRow="cardettse" msprop:Generator_ColumnPropNameInTable="cardettseColumn" msprop:Generator_UserColumnName="cardettse" type="xs:string" minOccurs="0" />
+              <xs:element name="tsedes" msprop:Generator_ColumnVarNameInTable="columntsedes" msprop:Generator_ColumnPropNameInRow="tsedes" msprop:Generator_ColumnPropNameInTable="tsedesColumn" msprop:Generator_UserColumnName="tsedes" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetfue" msprop:Generator_ColumnVarNameInTable="columncardetfue" msprop:Generator_ColumnPropNameInRow="cardetfue" msprop:Generator_ColumnPropNameInTable="cardetfueColumn" msprop:Generator_UserColumnName="cardetfue" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetdoc" msprop:Generator_ColumnVarNameInTable="columncardetdoc" msprop:Generator_ColumnPropNameInRow="cardetdoc" msprop:Generator_ColumnPropNameInTable="cardetdocColumn" msprop:Generator_UserColumnName="cardetdoc" type="xs:int" minOccurs="0" />
+              <xs:element name="cardethis" msprop:Generator_ColumnVarNameInTable="columncardethis" msprop:Generator_ColumnPropNameInRow="cardethis" msprop:Generator_ColumnPropNameInTable="cardethisColumn" msprop:Generator_UserColumnName="cardethis" type="xs:int" minOccurs="0" />
+              <xs:element name="cardetnum" msprop:Generator_ColumnVarNameInTable="columncardetnum" msprop:Generator_ColumnPropNameInRow="cardetnum" msprop:Generator_ColumnPropNameInTable="cardetnumColumn" msprop:Generator_UserColumnName="cardetnum" type="xs:int" minOccurs="0" />
+              <xs:element name="pacide" msprop:Generator_ColumnVarNameInTable="columnpacide" msprop:Generator_ColumnPropNameInRow="pacide" msprop:Generator_ColumnPropNameInTable="pacideColumn" msprop:Generator_UserColumnName="pacide" type="xs:string" minOccurs="0" />
+              <xs:element name="pacnom" msprop:Generator_ColumnVarNameInTable="columnpacnom" msprop:Generator_ColumnPropNameInRow="pacnom" msprop:Generator_ColumnPropNameInTable="pacnomColumn" msprop:Generator_UserColumnName="pacnom" type="xs:string" minOccurs="0" />
+              <xs:element name="pacno2" msprop:Generator_ColumnVarNameInTable="columnpacno2" msprop:Generator_ColumnPropNameInRow="pacno2" msprop:Generator_ColumnPropNameInTable="pacno2Column" msprop:Generator_UserColumnName="pacno2" type="xs:string" minOccurs="0" />
+              <xs:element name="pacap1" msprop:Generator_ColumnVarNameInTable="columnpacap1" msprop:Generator_ColumnPropNameInRow="pacap1" msprop:Generator_ColumnPropNameInTable="pacap1Column" msprop:Generator_UserColumnName="pacap1" type="xs:string" minOccurs="0" />
+              <xs:element name="pacap2" msprop:Generator_ColumnVarNameInTable="columnpacap2" msprop:Generator_ColumnPropNameInRow="pacap2" msprop:Generator_ColumnPropNameInTable="pacap2Column" msprop:Generator_UserColumnName="pacap2" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetfec" msprop:Generator_ColumnVarNameInTable="columncardetfec" msprop:Generator_ColumnPropNameInRow="cardetfec" msprop:Generator_ColumnPropNameInTable="cardetfecColumn" msprop:Generator_UserColumnName="cardetfec" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cardetcon" msprop:Generator_ColumnVarNameInTable="columncardetcon" msprop:Generator_ColumnPropNameInRow="cardetcon" msprop:Generator_ColumnPropNameInTable="cardetconColumn" msprop:Generator_UserColumnName="cardetcon" type="xs:string" minOccurs="0" />
+              <xs:element name="connom" msprop:Generator_ColumnVarNameInTable="columnconnom" msprop:Generator_ColumnPropNameInRow="connom" msprop:Generator_ColumnPropNameInTable="connomColumn" msprop:Generator_UserColumnName="connom" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetcod" msprop:Generator_ColumnVarNameInTable="columncardetcod" msprop:Generator_ColumnPropNameInRow="cardetcod" msprop:Generator_ColumnPropNameInTable="cardetcodColumn" msprop:Generator_UserColumnName="cardetcod" type="xs:string" minOccurs="0" />
+              <xs:element name="pronom" msprop:Generator_ColumnVarNameInTable="columnpronom" msprop:Generator_ColumnPropNameInRow="pronom" msprop:Generator_ColumnPropNameInTable="pronomColumn" msprop:Generator_UserColumnName="pronom" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetcan" msprop:Generator_ColumnVarNameInTable="columncardetcan" msprop:Generator_ColumnPropNameInRow="cardetcan" msprop:Generator_ColumnPropNameInTable="cardetcanColumn" msprop:Generator_UserColumnName="cardetcan" type="xs:short" minOccurs="0" />
+              <xs:element name="cardettot" msprop:Generator_ColumnVarNameInTable="columncardettot" msprop:Generator_ColumnPropNameInRow="cardettot" msprop:Generator_ColumnPropNameInTable="cardettotColumn" msprop:Generator_UserColumnName="cardettot" type="xs:int" minOccurs="0" />
+              <xs:element name="pacmreemp" msprop:Generator_ColumnVarNameInTable="columnpacmreemp" msprop:Generator_ColumnPropNameInRow="pacmreemp" msprop:Generator_ColumnPropNameInTable="pacmreempColumn" msprop:Generator_UserColumnName="pacmreemp" type="xs:string" minOccurs="0" />
+              <xs:element name="pacmrecer" msprop:Generator_ColumnVarNameInTable="columnpacmrecer" msprop:Generator_ColumnPropNameInRow="pacmrecer" msprop:Generator_ColumnPropNameInTable="pacmrecerColumn" msprop:Generator_UserColumnName="pacmrecer" type="xs:string" minOccurs="0" />
+              <xs:element name="pacmreres" msprop:Generator_ColumnVarNameInTable="columnpacmreres" msprop:Generator_ColumnPropNameInRow="pacmreres" msprop:Generator_ColumnPropNameInTable="pacmreresColumn" msprop:Generator_UserColumnName="pacmreres" type="xs:string" minOccurs="0" />
+              <xs:element name="cardetcco" msprop:Generator_ColumnVarNameInTable="columncardetcco" msprop:Generator_ColumnPropNameInRow="cardetcco" msprop:Generator_ColumnPropNameInTable="cardetccoColumn" msprop:Generator_UserColumnName="cardetcco" type="xs:string" minOccurs="0" />
+              <xs:element name="carfacfue" msprop:Generator_ColumnVarNameInTable="columncarfacfue" msprop:Generator_ColumnPropNameInRow="carfacfue" msprop:Generator_ColumnPropNameInTable="carfacfueColumn" msprop:Generator_UserColumnName="carfacfue" type="xs:string" minOccurs="0" />
+              <xs:element name="carfacdoc" msprop:Generator_ColumnVarNameInTable="columncarfacdoc" msprop:Generator_ColumnPropNameInRow="carfacdoc" msprop:Generator_ColumnPropNameInTable="carfacdocColumn" msprop:Generator_UserColumnName="carfacdoc" type="xs:int" minOccurs="0" />
+              <xs:element name="carfacano" msprop:Generator_ColumnVarNameInTable="columncarfacano" msprop:Generator_ColumnPropNameInRow="carfacano" msprop:Generator_ColumnPropNameInTable="carfacanoColumn" msprop:Generator_UserColumnName="carfacano" type="xs:short" minOccurs="0" />
+              <xs:element name="carfacmes" msprop:Generator_ColumnVarNameInTable="columncarfacmes" msprop:Generator_ColumnPropNameInRow="carfacmes" msprop:Generator_ColumnPropNameInTable="carfacmesColumn" msprop:Generator_UserColumnName="carfacmes" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

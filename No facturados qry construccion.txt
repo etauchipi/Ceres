@@ -1,0 +1,454 @@
+
+cConn = "select 'FACT', cardettse, tsedes, cardetfue, cardetdoc, cardethis, cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, pronom,"
+cConn += " cardetcan, cardettot, cardetfac, pacmreemp, pacmrecer, pacmreres "
+cConn += " from facardet, facon, inpro, intse, abpac, inpacmre"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardethis = pachis"
+cConn += " and cardethis = pacmrehis"
+cConn += " and cardetnum = pacmrenum"
+cConn += " and pacmreind = 'P'"
+cConn += " and cardetcon = concod"
+cConn += " and cardetcod = procod"
+cConn += " and conarc = 'INPROTAR'" 
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = '" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = '" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+
+cConn = "select 'FACT', cardettse, tsedes, cardetfue, cardetdoc, cardethis, cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, exanom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from facardet, facon, inexa,intse, abpac, inpacmre"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardethis = pachis"
+cConn += " and cardetcon = concod"
+cConn += " and cardetcod = exacod"
+cConn += " and conarc = 'INEXATAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+
+
+cConn = "select 'FACT', cardettse, tsedes, cardetfue, cardetdoc, cardethis, cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, connom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from facardet, facon, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0" 
+cConn += " and cardethis = pachis"
+cConn += " and cardetcon = concod" 
+cConn += " and conarc = 'FACONTAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+
+cConn = "select 'FACT', cardettse, tsedes, cardetfue, cardetdoc, cardethis, cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, drodetart, artnom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from facardet, ivdrodet, ivart, facon, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardetfue = drodetfue"
+cConn += " and cardetdoc = drodetdoc"
+cConn += " and cardetlin = drodetite"
+cConn += " and cardethis = pachis"
+cConn += " and drodetart = artcod"
+cConn += " and cardetcon = concod"
+cConn += " and conarc = 'IVARTTAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+----------------------------------- XXXXXX
+
+cConn = "select 'AYUD', cardettse, tsedes, cardetfue, cardetdoc, movhis, movnum cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, pronom,"
+cConn += " cardetcan, cardettot, cardetfac, movemp, movcer,movres"
+cConn += " from aycardet, aymov, facon, inpro, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardetfue = movfue"
+cConn += " and cardetdoc = movdoc"
+cConn += " and movhis = pachis"
+cConn += " and cardetcon = concod"
+cConn += " and cardetcod = procod"
+cConn += " and conarc = 'INPROTAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+cConn = "select 'AYUD', cardettse, tsedes, cardetfue, cardetdoc, movhis, movnum cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, exanom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from aycardet, aymov, facon, inexa, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " and cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardetfue = movfue"
+cConn += " and cardetdoc = movdoc"
+cConn += " and movhis = pachis"
+cConn += " and cardetcon = concod"
+cConn += " and cardetcod = exacod"
+cConn += " and conarc = 'INEXATAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+
+"select 'AYUD', cardettse, tsedes, cardetfue, cardetdoc, movhis, movnum cardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, cardetfec, cardetcon, connom, cardetcod, connom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from aycardet, aymov, facon, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardetfue = movfue"
+cConn += " and cardetdoc = movdoc"
+cConn += " and movhis = pachis"
+cConn += " and cardetcon = concod"
+cConn += " and conarc = 'FACONTAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+
+cConn = "select 'AYUD', cardettse, tsedes, cardetfue, cardetdoc, movhis, movnumcardetnum, pacide,"
+cConn += " pacnom, pacno2, pacap1, pacap2, movfec, cardetcon, connom, drodetart, artnom,"
+cConn += " cardetcan, cardettot, cardetfac"
+cConn += " from aycardet, aymov, ivdrodet, ivart, facon, intse, abpac"
+cConn += " where cardetfue <>'RE'"
+cConn += " AND cardetdoc > 0"
+cConn += " and cardetlin > 0"
+cConn += " and cardetvfa = 0"
+cConn += " and cardetvex = 0"
+cConn += " and cardetfue = drodetfue"
+cConn += " and cardetdoc = drodetdoc"
+cConn += " and cardetfue = movfue"
+cConn += " and cardetdoc = movdoc"
+cConn += " and cardetlin = drodetite"
+cConn += " and movhis = pachis"
+cConn += " and drodetart = artcod"
+cConn += " and cardetcon = concod"
+cConn += " and conarc = 'IVARTTAR'"
+cConn += " and cardetanu = '0'"
+cConn += " and cardettse = tsecod"
+
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+ 
+
+ 
+ 
+ 
+ 
+ -------------------------------- 
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and cardetnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
+
+
+
+----------- con movnum
+If (dtParams.historia > 0) then
+ cConn += " and abpac.pachis " & " = " & dtParams.historia
+End if
+
+If (dtParams.ingreso > 0) then
+	cConn += " and movnum " & " = " & dtParams.ingreso
+End if 
+
+If (dtParams.identificacion <> '-') then
+	cConn += " and abpac.pacide " & " = "'" & trim(dtParams.identificacion) & "'"
+End If
+
+If (dtParams.concepto <> '-') then
+	cConn += " and cardetcon " & " = "'" & trim(dtParams.concepto) & "'"
+End If
+
+If (dtParams.documento > 0) then
+	cConn += " and cardetdoc " & " = " & dtParams.documento
+End If
+
+If (dtParams.mes > 0) then
+	cConn += " and cardetmes " & " = " & dtParams.mes
+End If
+
+If (dtParams.ano > 0) then	
+	cConn += " and cardetano " & " = " & dtParams.ano
+End If
